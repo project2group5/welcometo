@@ -1,0 +1,16 @@
+<div class="container">
+  <aside>
+    <app-navigation></app-navigation>
+  </aside>
+  <main>
+    <div *ngIf="!category">
+      Home page for recommendations
+    </div>
+    <p *ngIf="person && category">
+      {{person.name}}'s {{category}} recommendations
+    </p>
+    <p *ngIf="!person && category">
+      {{category}} recommendations
+    </p>
+  </main>
+</div>

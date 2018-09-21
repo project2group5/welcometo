@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li><a [routerLink]=" selectedPeopleId ? '/people/' + selectedPeopleId + '/recommendations/restaurants' 
+          : '/recommendations/restaurants'">Restaurants</a></li>
+    <li><a [routerLink]=" selectedPeopleId ? '/people/' + selectedPeopleId + '/recommendations/events' 
+          : '/recommendations/events'">Events</a></li>
+    <li><a [routerLink]=" selectedPeopleId ? '/people/' + selectedPeopleId + '/recommendations/bars' 
+          : '/recommendations/bars'">Bars</a></li>
+  </ul>
+</nav>

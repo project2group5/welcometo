@@ -1,0 +1,35 @@
+/* HeroesComponent's private CSS styles */
+nav {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  nav li {
+    position: relative;
+    cursor: pointer;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 1em;
+    height: 1.6em;
+    border-radius: 4px;
+    list-style-type: none;
+  }
+  
+  nav li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  
+  nav a {
+    color: #888;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 250px;
+  }
+  
+  nav a:hover {
+    color:#607D8B;
+  }

@@ -1,0 +1,7 @@
+<div class="grid grid-pad">
+  <a *ngFor="let person of people" class="col-1-5" routerLink="/people/{{person.id}}">
+    <div class="module person" [class.selected]="person.id == selectedId">
+      <h4>{{person.name}}</h4>
+    </div>
+  </a>
+</div>
