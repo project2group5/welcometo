@@ -1,5 +1,5 @@
 //A Universal web server responds to application page requests with static 
-//HTML rendered by the Universal template engine.
+//HTML rendered by the Universal template engine
 
 //It receives and responds to HTTP requests from clients (usually browsers). 
 //It serves static assets such as scripts, css, and images. It may respond to data requests, 
