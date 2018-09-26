@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Person, Recommendation } from './models';
+import { Person } from './models';
 import { PEOPLE } from './mock-people';
+import { Recommendation } from './models';
+import { RECOMMENDATIONS } from './mock-people';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
@@ -9,6 +11,14 @@ import { Observable, of } from 'rxjs';
 export class PeopleService {
 
   constructor() {
+  }
+
+  getRec(): Observable<Recommendation[]> {
+    return of(RECOMMENDATIONS);
+  }
+
+  getRecs(id: number): Observable<Recommendation> {
+    return of(RECOMMENDATIONS.find(p => p.person === Person.name));
   }
 
   getPeople(): Observable<Person[]> {

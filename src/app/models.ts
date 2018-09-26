@@ -1,14 +1,12 @@
-export class Recommendation {
-    name: string;
-    description?: string;
-}
-
 export class Person {
     id: number;
     name: string;
-    profile?: string;
-    recommendations: {
-        restaurants: Recommendation[],
-        events: Recommendation[]
-    };
+    profile: string;
 }
+
+export class Recommendation {
+        person: string;
+        type: string;
+        name: string;
+        description: string;
+    };

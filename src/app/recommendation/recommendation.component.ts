@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PeopleService } from '../people.service';
 import { Person } from '../models';
+import { Recommendation } from '../models';
+
 
 @Component({
   selector: 'app-recommendation',
@@ -12,6 +14,8 @@ export class RecommendationComponent implements OnInit {
 
   person?: Person;
   category?: string;
+  recommendation?: Recommendation;
+  
   constructor(
     private route: ActivatedRoute,
     private peopleService: PeopleService
@@ -29,5 +33,8 @@ export class RecommendationComponent implements OnInit {
       this.category = params['category'];
     });
   }
+
+  
+
 
 }
