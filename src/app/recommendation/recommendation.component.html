@@ -6,11 +6,15 @@
     <div *ngIf="!category">
       Home page for recommendations
     </div>
+    <div>
     <p *ngIf="person && category">
-      {{person.name}}'s {{category}} recommendations
+      {{person.name}}'s {{category}} 
+      {{Recommendation}}
+    </p></div>
+    <div>
+    <p>
+      {{Recommendation}}
     </p>
-    <p *ngIf="!person && category">
-      {{category}} recommendations
-    </p>
+  </div>
   </main>
 </div>
