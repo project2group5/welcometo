@@ -1,65 +1,91 @@
 [class*='col-'] {
-    float: left;
-    padding-right: 20px;
-    padding-bottom: 20px;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /* background-image: url("/images/download.jpg"); */
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h4 {
+  position: relative;
+}
+
+.grid {
+  margin: 0;
+  overflow: auto;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+.col-1-5 {
+  width: 20%;
+}
+
+.module {
+  padding: 5px;
+  text-align: center;
+  color: black;
+  /* color: #00335F; */
+  max-height: 90px;
+  min-width: 80px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: rgb(214, 227, 230);
+  /* opacity: 0.2; */
+  border-radius: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* add border color -- not too important */
+}
+
+.module:hover {
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.grid-pad {
+  padding: 10px 0;
+}
+
+.grid-pad>[class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height: 75px;
   }
-  [class*='col-']:last-of-type {
-    padding-right: 0;
-  }
-  a {
-    text-decoration: none;
-  }
-  *, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  h3 {
-    text-align: center; margin-bottom: 0;
-  }
-  h4 {
-    position: relative;
-  }
+}
+
+@media (max-width: 1024px) {
   .grid {
     margin: 0;
-    overflow: auto;
   }
-  .col-1-4 {
-    width: 25%;
-  }
-  .col-1-5 {
-    width: 20%;
-  }
+
   .module {
-    padding: 20px;
-    text-align: center;
-    color: #eee;
-    max-height: 120px;
-    min-width: 120px;
-    background-color: #607d8b;
-    border-radius: 2px;
+    min-width: 60px;
   }
-  .module:hover {
-    background-color: #eee;
-    cursor: pointer;
-    color: #607d8b;
-  }
-  .grid-pad {
-    padding: 10px 0;
-  }
-  .grid-pad > [class*='col-']:last-of-type {
-    padding-right: 20px;
-  }
-  @media (max-width: 600px) {
-    .module {
-      font-size: 10px;
-      max-height: 75px; }
-  }
-  @media (max-width: 1024px) {
-    .grid {
-      margin: 0;
-    }
-    .module {
-      min-width: 60px;
-    }
-  }
+}
