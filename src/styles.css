@@ -7,6 +7,7 @@ h1 {
   padding-top: 5%;
   padding-bottom: 16%;
   background-image: url('./assets/skyline.png');
+
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -25,7 +26,9 @@ body {
 body,
 input[text],
 button {
+
   color: cadetblue;
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
