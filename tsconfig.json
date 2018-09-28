@@ -5,8 +5,10 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
+    "module": "system",
     "moduleResolution": "node",
+    "removeComments": false,
+    "noImplicitAny": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
@@ -16,6 +18,11 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+  //   "exclude": [
+  //   "node_modules",
+  //   "typings/main",
+  //   "typings/main.d.ts"
+  // ]
   }
 }
